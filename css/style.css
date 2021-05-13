@@ -1,0 +1,759 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.header-wraper{
+    background-image:url(../photos/Rc7e40417910c59ed6faf4c6740853c20.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 668px;
+    background-size: cover;  
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+nav img{
+    width: 100px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li {
+    display:inline-block;
+    padding: 8px 12px;
+    position: relative;
+    font-size: 15px;
+    list-style: none;
+}
+.nav-links ul li a{
+    color: black;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: black;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+
+}
+.ntb{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.btn{
+    width: 200px;
+    height: 60px;
+    background: none;
+    border: 4px solid;
+    color: black;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 16px;
+    
+}
+.btn::before,.btn::after{
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 4px;
+    background: white;
+    transform: skewX(50deg);
+    transition: .4s linear;
+}
+.btn::before{
+    top: -4px;
+    left: 10%;
+}
+.btn::after{
+    bottom: -4px;
+    right: 10%;
+}
+.btn:hover::before{
+    left: 80%;
+}
+.btn:hover::after{
+    right: 80%;
+}
+.bikeresort{
+    text-align: center;
+    margin-top: 60px;
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+.title{
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 200px;
+}
+.section1{
+    width: 80%;
+    margin: auto;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.rentbikes{
+    height: 100%;
+    width: 330px;
+    background-color:whitesmoke;
+    
+   
+}
+.rentbikes img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;  
+}
+.rentbike{
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+
+}
+.description{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    margin-top: 15px;
+    height: 80px;
+}
+.showw{
+    position: absolute;
+    height: 50px;
+    margin-left: 65px;
+    margin-top: 50px;
+    
+    
+   
+}
+.mountains{
+    width: 80%;
+    margin: auto;
+    height: 550px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mountaincon{
+    height: 100%;
+    width: 300px;
+    position: relative;
+    margin-top: 80px;
+    
+} 
+.mountaincon img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    display: block;
+    border-radius: 10px;
+}
+
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: black;
+    border-radius: 10px;
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+  }
+  @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+
+
+  .testimonials{
+      width: 80%;
+      font-family: 'Poppins', sans-serif;
+      margin: auto;
+  }
+  .container2{
+    width:500px;
+    min-height:315px;
+    margin:0 auto;
+    position:relative;
+    padding-bottom:30px;
+    overflow:hidden;
+  }
+  h1{
+    text-align:center;
+    text-shadow:0 1px white;
+    color:#02303F;
+  }
+  h2{
+    color:#736861; 
+    margin:15px 0 5px;
+    text-shadow:0 1px rgba(255,255,255,0.5);
+  }
+  h6{
+    color:#928566; 
+    margin:0;
+  }
+  input[type="radio"] {
+  position: absolute;
+  width: 1px; 
+  height: 1px; 
+  padding: 0;
+  margin: -1px;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  }
+  label{
+    display:block;
+    width:32%;
+    border: 4px solid gray;
+    position:absolute;
+    bottom:5px;
+    cursor: pointer;
+    transition: border-color 0.3s linear;
+  }
+  
+  label.second{
+    left:34%;
+  }
+  label.third{
+    left:68%;
+  }
+  
+  blockquote{
+    margin:0;
+    padding:30px;
+    width:500px;
+    background-color: black;
+    color:white;
+    box-shadow: 0 5px 2px rgba(0,0,0,0.1);
+    position:relative;
+    transition: background-color 0.6s linear;
+  }
+  
+  blockquote:after { 
+    content: " "; 
+    height: 0; 
+    width: 0; 
+    position: absolute; 
+    top: 100%; 
+    border: solid transparent; 
+    border-top-color: black;
+    border-left-color:black;
+    border-width: 10px; 
+    left: 10%; 
+  } 
+  #second:checked ~ .two blockquote {
+    background-color:purple;
+  }
+  .two blockquote:after{
+    border: solid transparent; 
+    border-top-color: purple;
+    border-left-color:purple;
+    border-width: 10px;
+  }
+  #third:checked ~ .three blockquote{
+    background-color:#54885F;
+  }
+  .three blockquote:after{
+    border: solid transparent; 
+    border-top-color: #54885F;
+    border-left-color: #54885F;
+    border-width: 10px;
+  }
+  .quotes{
+    position:absolute;
+    color:rgba(255,255,255,0.5);
+    font-size:5em;
+  }
+  .leftq{
+    top:-25px;
+    left:5px;
+  }
+  .rightq{
+    bottom:-10px;
+    right:5px;
+  }
+  img{
+    float:left;
+    margin-right: 20px;
+    object-fit: cover;
+  }
+  .slide{
+    position:absolute;
+    left:-100%;
+    opacity:0;
+    transition: all 0.6s ease-in;
+  }
+  
+  #first:checked ~ label.first {
+    border-width:6px;
+    border-color:black;
+  }
+  #second:checked ~ label.second {
+    border-width:6px; border-color:purple;
+  }
+  #third:checked ~ label.third {
+    border:6px solid #54885F;
+  }
+  
+  #first:checked ~ div.one {
+    left:0;
+    opacity:1;
+  }
+  #second:checked ~ div.two {
+    left:0;
+    opacity:1;
+  }
+  #third:checked ~ div.three {
+    left:0;
+    opacity:1;
+  }
+  .tt{
+      margin-bottom: 80px;
+  }
+  .bikeback{
+    width: 100%;
+    height: 320px;
+    background-image: url(../photos/down.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 150px;
+  }
+  .visitresort{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 70px;
+    margin-bottom: 150px;
+  }
+  .visitbtn{
+    position: absolute;
+    margin-top: 70px;
+    
+  }
+  .foooter{
+      margin: auto;
+      width: 550px;
+      height: 150px;
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      flex-direction: column;
+      margin-top: 60px;
+  }
+  .aboutus{
+      text-align: center;
+  }
+  .aboutustxt{
+      font-size: 14px;
+      text-align: center;
+      color: gray;
+      margin-top: 20px;
+  }
+  .icons img{
+      width: 25px;
+  }
+  .icons{
+      display: flex;
+      margin: auto;
+  }
+  .largest{
+      width: 80%;
+      margin:auto;
+      height: 450px;
+      display: flex;
+      font-family: 'Poppins', sans-serif;
+      margin-top: 100px;
+
+     
+  }
+  .abbout{
+    width: 50%;
+    height: 100%;
+  }
+  .aboutimage{
+      width: 50%;
+      height: 100%;
+      float: right;
+      
+  }
+  .aboutimage img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+  .largestt{
+      font-size: 30px;
+
+  }
+  .ipsum{
+      font-size: 17px;
+      color: gray;
+      margin-top: 20px;
+  }
+  .explorebtn{
+      position: absolute;
+      height: 50px;
+      margin-top: 40px;
+  }
+  .abt{
+      margin-top: 120px;
+
+  }
+  .location{
+      width: 80%;
+      margin:auto;
+      padding: 80px 0;
+  }
+  .location iframe{
+      width: 100%;
+  }
+  .contactss{
+      width: 80%;
+      height: 550px;
+      margin: auto;
+      display: flex;
+  }
+  .emaill{
+      width: 50%;
+      height: 100%;
+      float: right;
+      display: flex;
+      flex-direction: column;
+
+  }
+  .locationnn{
+      width: 50%;
+      float: left;
+      height: 100%;
+  }
+  input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 2px solid #ccc;
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical 
+  }
+  
+  
+  .container3 {
+    border-radius: 5px;
+    background-color: none;
+    padding: 20px;
+  }
+  .emailbtn{
+    position:absolute;
+     height: 50px;
+     margin-top: 30px;
+  }
+  .number img{
+      width: 50px;
+  }
+  .number{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+  }
+  .medtext{
+      font-size: 20px;
+
+  }
+  .textsss{
+      display: flex;
+      flex-direction: column;
+  }
+  .smltext{
+      font-size: 14px;
+      color:gray;
+  }
+  @media(max-width:700px){
+      .nav-links ul li{
+          font-size: 12px;
+          padding: 4px 8px;
+      }
+      .logo{
+          width: 50px;
+      }
+      .section1{
+          display: flex;
+          flex-direction:column ;
+          margin-top: 10px;
+      }
+      .rentbikes{
+          width: 250px;
+          height: 300px;
+          margin-top: 200px;
+
+      }
+      .showw{
+          width: 100px;
+          height: 50px;
+      }
+      .mountains{
+          display: flex;
+          flex-direction: column;
+      }
+      .title{
+          margin-top: 700px;
+      }
+      .mountaincon{
+          padding-top: 400px;
+           width: 250px;}
+      
+      .testimonials{
+          padding-top: 1000px;
+      }
+      .container2{
+          width: 300px;
+          height: 300px;
+      }
+      .txtttt{
+          font-size: 33px;
+
+
+      }
+      .foooter{
+          width: 300px;
+          height: 150px;
+      }
+      .icons img{
+        width: 15px;
+      }
+      .ipsum{
+        font-size: 7px;
+      }
+      .largestt{
+        font-size: 11px;
+      }
+      .explorebtn{
+        width: 90px;
+        height: 30px;
+        font-size: 8px;
+      }
+      .aboutimage{
+        width: 100%;
+        height: 300px;
+      }
+      .aboutustxt{
+        font-size: 12px;
+      }
+      .bikeresort{
+        font-size: 30px;
+        padding-top: 70px;
+      }
+      .ntb{
+        height: 50px;
+        width: 150px;
+      }
+      .number{
+        width: 100%;
+      }
+      .number img{
+        width: 30px;
+      }
+      .medtext{
+        font-size: 10px;
+      }
+      .smltext{
+        font-size: 7px;
+      }
+      .contactss{
+        flex-direction: column;
+      }
+      .emaill{
+        width: 100%;
+      }
+      .contactss{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        width: 100%;
+      }
+      .container3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .emailbtn{
+        margin-top: 450px;
+      }
+      .ticketss{
+        display: flex;
+        flex-direction: column;
+      }
+      .ticketsss{
+        display: flex;
+        flex-direction: column;
+      }
+      .boxticket{
+        padding-top: 70px;
+      }
+      .mountaintitle{
+        padding-top: 500px;
+        font-size: 30px;
+      }
+  }
+  .contactfooter{
+      margin-top: 130px;
+  }
+  .box{
+    margin:0px auto;
+    margin-top:80px;
+    background:whitesmoke;
+    color:#333;
+    text-transform:uppercase;
+    padding:8px;
+    width:300px;
+    font-weight:bold;
+    text-shadow:0px 1px 0px #fff;
+    font-family:"arvo";
+    font-size: 11px;
+    border-left: 1px dashed rgba(51, 51, 51, 0.5);
+    -webkit-filter: drop-shadow(0 5px 18px #000);
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .inner{
+    border: 2px dashed rgba(51, 51, 51, 0.5);
+    min-height:100px;
+    padding:8px;
+    
+  }
+  .inner h1{
+    padding:5px 0px;
+    margin:0px;
+    font-size:18px;
+    border-bottom: 1px solid rgba(51, 51, 51, 0.3);
+    text-align:center;
+  }
+  .info{
+    width:100%;
+    margin-top:5px;
+  }
+  .info .wp{
+    float: left;
+    padding: 5px;
+    width: 83px;
+    text-align: center;
+  }
+  .info .wp h2{
+    margin: 8px;
+  }
+  .total{
+    border-top: 1px solid rgba(51, 51, 51, 0.3);
+  }
+  
+  .clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+  .total h2{
+    padding-left:115px;
+    margin:10px 0px; 
+    font-size: 15px;
+  }
+  .total p{float:right;margin:0px;margin-right: 15px;}
+  
+  a.buy{
+    color:#fff;
+    text-align:center;
+    font-size:25px;
+    text-decoration:none;
+    display:block;
+    width:200px;
+    margin:0px auto;
+    margin-top:50px;
+    padding:5px;
+    background:rgba(0,0,0,0.5);}
+    .ticketss{
+        width: 80%;
+        margin: auto;
+        display: flex;
+    }
+    .boxticket{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    .buybtn{
+        position: absolute;
+        margin-top: 350px;
+        height: 50px;
+    }
+    .ticketsss{
+        width: 80%;
+        margin: auto;
+        display: flex;
+        margin-top: 60px;
+    }
+    .ticketfooter{
+        margin-top: 300px;
+    }
+    
+              
+      
+      
+  
+
+      
+      
+     
+      
